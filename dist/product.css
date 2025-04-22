@@ -1,0 +1,97 @@
+.productContainer {
+  border: 1px solid #ddd;
+  border-radius: 0.5rem;
+  max-width: calc(50% - 6px);
+  overflow: hidden;
+  padding: 0.75rem 0.5rem;
+}
+.productContainer .image {
+  width: 100%;
+}
+.productContainer .image .new {
+  position: absolute;
+  background-color: var(--darkBlue);
+  color: white;
+  font-size: 0.625rem;
+  line-height: 1.375rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  padding: 0 0.25rem;
+  border-radius: 0.25rem;
+}
+.productContainer .image img {
+  width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.productContainer .text h3 {
+  margin-top: 0.5rem;
+  font-family: Nunito Sans;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-transform: capitalize;
+}
+.productContainer .text .pricesContainer {
+  margin-top: 0.75rem;
+  margin-right: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+}
+.productContainer .text .pricesContainer .original {
+  font-family: Nunito Sans;
+  font-weight: 400;
+  font-size: 0.75rem;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-transform: capitalize;
+  text-decoration: line-through;
+}
+.productContainer .text .pricesContainer .now {
+  font-family: Nunito Sans;
+  font-weight: 700;
+  font-size: 1rem;
+  margin-top: 0.25rem;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-transform: capitalize;
+}
+.productContainer .text .pricesContainer .discount {
+  font-family: Nunito Sans;
+  font-weight: 700;
+  font-size: 0.75rem;
+  height: 1.5rem;
+  letter-spacing: 0%;
+  text-align: center;
+  text-transform: uppercase;
+  border-radius: 0.25rem;
+  color: white;
+  padding: 0.25rem 0.5rem;
+  background-color: var(--greenBlue);
+}
+.productContainer .text .bottom {
+  font-family: Nunito Sans;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  margin-top: 0.25rem;
+}
+.productContainer .text .bottom span {
+  font-family: Nunito Sans;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: #303030;
+}
+.productContainer button {
+  width: 100%;
+  border-radius: 0.5rem;
+  margin-top: 0.75rem;
+  padding: 0.625rem 0;
+  color: white;
+  background-color: var(--blue);
+}/*# sourceMappingURL=product.css.map */
