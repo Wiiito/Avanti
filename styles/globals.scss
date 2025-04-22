@@ -1,0 +1,12 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Nunito Sans', sans-serif;
+}
+
+.noScrollBar {
+	scrollbar-width: none;
+	-ms-overflow-style: none;
+}
