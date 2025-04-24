@@ -88,7 +88,7 @@
 					</div>
 
 					<div
-						class="relative h-6 w-6 after:content-['2'] after:text-center after:leading-5 after:text-xs after:text-white after:font-semibold after:absolute after:top-0 after:left-full after:w-5 after:h-5 after:rounded-full after:transform after:-translate-x-1/2 after:-translate-y-1/2 after:bg-[var(--blue)]"
+						class="relative h-6 w-6 after:content-['2'] after:text-center after:leading-5 after:text-xs after:text-white after:font-semibold after:absolute after:top-0 after:left-full after:w-5 after:h-5 after:rounded-full after:transform after:-translate-x-1/2 after:-translate-y-1/2 after:bg-[var(--blue)] cursor-pointer"
 					>
 						<img src="public/icons/cart.svg" alt="Carrinho" />
 					</div>
@@ -423,75 +423,108 @@
 		</div>
 
 		<!-- Hero & Slider -->
-		<div class="sliderContainer h-[19.125rem]">
+		<div class="sliderContainer h-[19.125rem] lg:h-[31.875rem]">
 			<!-- Conteudo do slider -->
 			<div
 				class="slider autoScroll bg-[var(--gray)] *:h-full *:w-full *:overflow-hidden"
 			>
 				<div class="contentContaniner relative">
-					<img
-						src="public/images/chair.png"
-						class="absolute h-full mix-blend-darken"
-						alt="Chair Image"
-					/>
-					<div
-						class="absolute w-[8.75rem] h-[10.25rem] ml-[50%] transform -translate-y-1/2 top-1/2 text-center font-[Nunito,sans-serif]"
-					>
-						<p class="text-[2.5rem] leading-10 uppercase">
-							<span class="font-bold">Super </span>Sale
-						</p>
-						<p class="mt-3 text-xs text-[var(--blue)] font-bold uppercase">
-							Itens selecionados com até
-						</p>
-						<p
-							class="mt-3 text-3xl leading-none text-[var(--blue)] font-bold uppercase"
+					<div class="lg:max-w-[80rem] h-full mx-auto relative">
+						<img
+							src="public/images/chair.png"
+							class="absolute h-full mix-blend-darken lg:hidden"
+							alt="Chair Image"
+						/>
+						<img
+							src="public/images/fullChair.png"
+							alt="Chair Image"
+							class="absolute h-full left-0 mix-blend-darken hidden lg:block"
+						/>
+						<div
+							class="absolute w-[8.75rem] lg:w-auto h-[10.25rem] lg:h-auto ml-[50%] lg:ml-[30%] lg:pr-8 lg:right-0 transform -translate-y-1/2 top-1/2 text-center font-[Nunito,sans-serif]"
 						>
-							50%off
-						</p>
+							<p
+								class="text-[2.5rem] lg:text-[6.5rem] font-light leading-10 lg:leading-none uppercase"
+							>
+								<span class="font-bold">Super </span>Sale
+							</p>
+							<p
+								class="mt-3 text-xs text-[var(--blue)] font-bold uppercase lg:text-2xl lg:tracking-[0.6rem]"
+							>
+								Itens selecionados com até
+							</p>
+							<p
+								class="mt-3 text-3xl lg:text-6xl leading-none text-[var(--blue)] font-bold uppercase"
+							>
+								50%off
+							</p>
+						</div>
 					</div>
 				</div>
 				<div class="contentContaniner relative">
-					<img
-						src="public/images/chair.png"
-						class="absolute h-full mix-blend-darken"
-						alt="Chair Image"
-					/>
-					<div
-						class="absolute w-[8.75rem] h-[10.25rem] ml-[50%] transform -translate-y-1/2 top-1/2 text-center font-[Nunito,sans-serif]"
-					>
-						<p class="text-[2.5rem] leading-10 uppercase">
-							<span class="font-bold">Super </span>Sale
-						</p>
-						<p class="mt-3 text-xs text-[var(--blue)] font-bold uppercase">
-							Itens selecionados com até
-						</p>
-						<p
-							class="mt-3 text-3xl leading-none text-[var(--blue)] font-bold uppercase"
+					<div class="lg:max-w-[80rem] h-full mx-auto relative">
+						<img
+							src="public/images/chair.png"
+							class="absolute h-full mix-blend-darken lg:hidden"
+							alt="Chair Image"
+						/>
+						<img
+							src="public/images/fullChair.png"
+							alt="Chair Image"
+							class="absolute h-full left-0 mix-blend-darken hidden lg:block"
+						/>
+						<div
+							class="absolute w-[8.75rem] lg:w-auto h-[10.25rem] lg:h-auto ml-[50%] lg:ml-[30%] lg:pr-8 lg:right-0 transform -translate-y-1/2 top-1/2 text-center font-[Nunito,sans-serif]"
 						>
-							50%off
-						</p>
+							<p
+								class="text-[2.5rem] lg:text-[6.5rem] font-light leading-10 lg:leading-none uppercase"
+							>
+								<span class="font-bold">Super </span>Sale
+							</p>
+							<p
+								class="mt-3 text-xs text-[var(--blue)] font-bold uppercase lg:text-2xl lg:tracking-[0.6rem]"
+							>
+								Itens selecionados com até
+							</p>
+							<p
+								class="mt-3 text-3xl lg:text-6xl leading-none text-[var(--blue)] font-bold uppercase"
+							>
+								50%off
+							</p>
+						</div>
 					</div>
 				</div>
 				<div class="contentContaniner relative">
-					<img
-						src="public/images/chair.png"
-						class="absolute h-full mix-blend-darken"
-						alt="Chair Image"
-					/>
-					<div
-						class="absolute w-[8.75rem] h-[10.25rem] ml-[50%] transform -translate-y-1/2 top-1/2 text-center font-[Nunito,sans-serif]"
-					>
-						<p class="text-[2.5rem] leading-10 uppercase">
-							<span class="font-bold">Super </span>Sale
-						</p>
-						<p class="mt-3 text-xs text-[var(--blue)] font-bold uppercase">
-							Itens selecionados com até
-						</p>
-						<p
-							class="mt-3 text-3xl leading-none text-[var(--blue)] font-bold uppercase"
+					<div class="lg:max-w-[80rem] h-full mx-auto relative">
+						<img
+							src="public/images/chair.png"
+							class="absolute h-full mix-blend-darken lg:hidden"
+							alt="Chair Image"
+						/>
+						<img
+							src="public/images/fullChair.png"
+							alt="Chair Image"
+							class="absolute h-full left-0 mix-blend-darken hidden lg:block"
+						/>
+						<div
+							class="absolute w-[8.75rem] lg:w-auto h-[10.25rem] lg:h-auto ml-[50%] lg:ml-[30%] lg:pr-8 lg:right-0 transform -translate-y-1/2 top-1/2 text-center font-[Nunito,sans-serif]"
 						>
-							50%off
-						</p>
+							<p
+								class="text-[2.5rem] lg:text-[6.5rem] font-light leading-10 lg:leading-none uppercase"
+							>
+								<span class="font-bold">Super </span>Sale
+							</p>
+							<p
+								class="mt-3 text-xs text-[var(--blue)] font-bold uppercase lg:text-2xl lg:tracking-[0.6rem]"
+							>
+								Itens selecionados com até
+							</p>
+							<p
+								class="mt-3 text-3xl lg:text-6xl leading-none text-[var(--blue)] font-bold uppercase"
+							>
+								50%off
+							</p>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -501,7 +534,7 @@
 		</div>
 
 		<!-- Lançamentos -->
-		<section class="mt-14 px-4">
+		<section class="mt-14 lg:mt-24 px-4 max-w-[80rem] mx-auto">
 			<div class="flex justify-between">
 				<h2 class="font-bold text-base leading-none">Lançamentos</h2>
 				<a href="/" class="text-sm font-bold underline leading-none"
@@ -577,162 +610,618 @@
 							<span class="more">&#xFF0B;</span>
 						</button>
 					</div>
+					<div class="productContainer">
+						<div class="image">
+							<div class="new">Novo</div>
+							<img src="public/images/product.png" alt="Camisa Branca" />
+						</div>
+						<div class="text">
+							<h3>Lorem ipsum dolor sit amet consectetuer adipiscing elit</h3>
+							<div class="pricesContainer">
+								<div class="prices">
+									<div class="original">R$ 100,00</div>
+									<div class="now">R$79,90</div>
+								</div>
+								<div class="discount">10% OFF</div>
+							</div>
+							<div class="bottom">Ou em até <span>10x de R$ 7,90</span></div>
+						</div>
+						<button>
+							<span class="minus">&#x2212;</span>
+							<div class="text">Comprar</div>
+							<span class="more">&#xFF0B;</span>
+						</button>
+					</div>
+					<div class="productContainer">
+						<div class="image">
+							<div class="new">Novo</div>
+							<img src="public/images/product.png" alt="Camisa Branca" />
+						</div>
+						<div class="text">
+							<h3>Lorem ipsum dolor sit amet consectetuer adipiscing elit</h3>
+							<div class="pricesContainer">
+								<div class="prices">
+									<div class="original">R$ 100,00</div>
+									<div class="now">R$79,90</div>
+								</div>
+								<div class="discount">10% OFF</div>
+							</div>
+							<div class="bottom">Ou em até <span>10x de R$ 7,90</span></div>
+						</div>
+						<button>
+							<span class="minus">&#x2212;</span>
+							<div class="text">Comprar</div>
+							<span class="more">&#xFF0B;</span>
+						</button>
+					</div>
+					<div class="productContainer">
+						<div class="image">
+							<div class="new">Novo</div>
+							<img src="public/images/product.png" alt="Camisa Branca" />
+						</div>
+						<div class="text">
+							<h3>Lorem ipsum dolor sit amet consectetuer adipiscing elit</h3>
+							<div class="pricesContainer">
+								<div class="prices">
+									<div class="original">R$ 100,00</div>
+									<div class="now">R$79,90</div>
+								</div>
+								<div class="discount">10% OFF</div>
+							</div>
+							<div class="bottom">Ou em até <span>10x de R$ 7,90</span></div>
+						</div>
+						<button>
+							<span class="minus">&#x2212;</span>
+							<div class="text">Comprar</div>
+							<span class="more">&#xFF0B;</span>
+						</button>
+					</div>
+					<div class="productContainer">
+						<div class="image">
+							<div class="new">Novo</div>
+							<img src="public/images/product.png" alt="Camisa Branca" />
+						</div>
+						<div class="text">
+							<h3>Lorem ipsum dolor sit amet consectetuer adipiscing elit</h3>
+							<div class="pricesContainer">
+								<div class="prices">
+									<div class="original">R$ 100,00</div>
+									<div class="now">R$79,90</div>
+								</div>
+								<div class="discount">10% OFF</div>
+							</div>
+							<div class="bottom">Ou em até <span>10x de R$ 7,90</span></div>
+						</div>
+						<button>
+							<span class="minus">&#x2212;</span>
+							<div class="text">Comprar</div>
+							<span class="more">&#xFF0B;</span>
+						</button>
+					</div>
+					<div class="productContainer">
+						<div class="image">
+							<div class="new">Novo</div>
+							<img src="public/images/product.png" alt="Camisa Branca" />
+						</div>
+						<div class="text">
+							<h3>Lorem ipsum dolor sit amet consectetuer adipiscing elit</h3>
+							<div class="pricesContainer">
+								<div class="prices">
+									<div class="original">R$ 100,00</div>
+									<div class="now">R$79,90</div>
+								</div>
+								<div class="discount">10% OFF</div>
+							</div>
+							<div class="bottom">Ou em até <span>10x de R$ 7,90</span></div>
+						</div>
+						<button>
+							<span class="minus">&#x2212;</span>
+							<div class="text">Comprar</div>
+							<span class="more">&#xFF0B;</span>
+						</button>
+					</div>
+					<div class="productContainer">
+						<div class="image">
+							<div class="new">Novo</div>
+							<img src="public/images/product.png" alt="Camisa Branca" />
+						</div>
+						<div class="text">
+							<h3>Lorem ipsum dolor sit amet consectetuer adipiscing elit</h3>
+							<div class="pricesContainer">
+								<div class="prices">
+									<div class="original">R$ 100,00</div>
+									<div class="now">R$79,90</div>
+								</div>
+								<div class="discount">10% OFF</div>
+							</div>
+							<div class="bottom">Ou em até <span>10x de R$ 7,90</span></div>
+						</div>
+						<button>
+							<span class="minus">&#x2212;</span>
+							<div class="text">Comprar</div>
+							<span class="more">&#xFF0B;</span>
+						</button>
+					</div>
+					<div class="productContainer">
+						<div class="image">
+							<div class="new">Novo</div>
+							<img src="public/images/product.png" alt="Camisa Branca" />
+						</div>
+						<div class="text">
+							<h3>Lorem ipsum dolor sit amet consectetuer adipiscing elit</h3>
+							<div class="pricesContainer">
+								<div class="prices">
+									<div class="original">R$ 100,00</div>
+									<div class="now">R$79,90</div>
+								</div>
+								<div class="discount">10% OFF</div>
+							</div>
+							<div class="bottom">Ou em até <span>10x de R$ 7,90</span></div>
+						</div>
+						<button>
+							<span class="minus">&#x2212;</span>
+							<div class="text">Comprar</div>
+							<span class="more">&#xFF0B;</span>
+						</button>
+					</div>
 				</div>
 				<div class="sliderDots -bottom-4"></div>
 			</div>
 		</section>
 
 		<!-- Caneca - Lorem Ipsum -->
-		<section class="mt-14">
+		<section class="mt-14 lg:mt-24 max-w-[80rem] mx-auto lg:flex lg:px-4">
 			<img
 				src="./public/images/Caneca.png"
 				alt="Caneca-Avanti"
-				class="w-screen h-[100vw] object-cover"
+				class="w-screen h-[100vw] object-cover lg:w-[55%] lg:h-auto"
 			/>
 
-			<div class="px-6 pt-10">
-				<h2 class="font-[Nunito] font-bold text-2xl uppercase tracking-[4%]">
-					Lorem Ipsum
-				</h2>
-				<p
-					class="font-[Nunito] font-normal text-base tracking-[5%] text-justify mt-4"
-				>
-					Aenean massa. Cum sociis natoque penatibus et magnis dis parturient
-					montes, nascetur ridiculus mus. Donec quam felis, ultricies nec,
-					pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.
-				</p>
-				<p
-					class="font-[Nunito] font-normal text-base tracking-[5%] text-justify mt-4"
-				>
-					Cras dignissim est et pellentesque tincidunt. Praesent bibendum quis
-					velit a aliquam. Ut vestibulum turpis eget mi iaculis ullamcorper.
-					Curabitur nec metus sed tortor sollicitudin porta nec eu enim. Ut
-					fermentum scelerisque tortor mollis volutpat. Mauris iaculis magna
-					nisl, vel porttitor augue placerat et.
-				</p>
+			<div
+				class="px-6 pt-10 font-[Nunito] font-normal text-base tracking-widest text-justify grid"
+			>
+				<div class="my-auto">
+					<h2
+						class="font-[Nunito] font-bold text-2xl uppercase tracking-wider lg:text-3xl leading-snug"
+					>
+						Lorem Ipsum
+					</h2>
+					<!-- Mobile text (Estava diferente no modelo, apenas segui) -->
+					<div class="lg:hidden">
+						<p class="mt-4">
+							Aenean massa. Cum sociis natoque penatibus et magnis dis
+							parturient montes, nascetur ridiculus mus. Donec quam felis,
+							ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat
+							massa quis enim.
+						</p>
+						<p class="mt-4">
+							Cras dignissim est et pellentesque tincidunt. Praesent bibendum
+							quis velit a aliquam. Ut vestibulum turpis eget mi iaculis
+							ullamcorper. Curabitur nec metus sed tortor sollicitudin porta nec
+							eu enim. Ut fermentum scelerisque tortor mollis volutpat. Mauris
+							iaculis magna nisl, vel porttitor augue placerat et.
+						</p>
+					</div>
+					<div class="hidden lg:block">
+						<p class="mt-4">
+							Duis consectetur metus nec lacus auctor dignissim. Mauris vitae
+							finibus dui. Mauris laoreet lacus ut eleifend viverra. Cras
+							efficitur volutpat dui, in lobortis metus lacinia sit amet. Sed
+							lacinia pharetra magna, vel pulvinar ligula hendrerit a. Maecenas
+							fringilla porttitor tortor eget lacinia. Donec sollicitudin
+							euismod orci, auctor fringilla magna consequat interdum. Fusce
+							sagittis elit a libero commodo egestas efficitur id augue.
+						</p>
+						<div class="mt-4">
+							Duis consectetur metus nec lacus auctor dignissim. Mauris vitae
+							finibus dui. Mauris laoreet lacus ut eleifend viverra. Cras
+							efficitur volutpat dui, in lobortis metus lacinia sit amet. Sed
+							lacinia pharetra magna, vel pulvinar ligula hendrerit a. Maecenas
+							fringilla porttitor tortor eget lacinia. Donec sollicitudin
+							euismod orci, auctor fringilla magna consequat interdum. Fusce
+							sagittis elit a libero commodo egestas efficitur id augue.
+						</div>
+					</div>
+				</div>
 			</div>
 		</section>
 
 		<!-- Caneca cozinha - Lorem Ipsum - 3 Pontos -->
-		<section class="mt-14 bg-[#dedede] py-7 px-6 font-[Nunito]">
-			<img
-				src="./public/images/Caneca cozinha.png"
-				alt="Caneca na cozinha Avanti"
-				class="w-full h-auto"
-			/>
-			<h2 class="mt-5 font-bold text-xl tracking-[4%] text-center uppercase">
-				Lorem Ipsum
-			</h2>
-			<div>
-				<div class="flex items-center mt-5">
+		<section class="mt-14 lg:mt-24 bg-[#dedede] py-7 px-6 font-[Nunito]">
+			<div class="max-w-[80rem] mx-auto px-4 lg:flex flex-row-reverse">
+				<img
+					src="./public/images/Caneca cozinha.png"
+					alt="Caneca na cozinha Avanti"
+					class="w-full h-auto"
+				/>
+				<div class="my-auto lg:mr-12 lg:text-[#4f4f4f] lg:w-4/5">
+					<h2
+						class="mt-5 font-bold text-xl tracking-[4%] text-center uppercase lg:text-3xl"
+					>
+						Lorem Ipsum
+					</h2>
 					<div
-						class="w-[3.75rem] h-[3.75rem] flex items-center justify-center rounded-full bg-[var(--blue)] text-white"
+						class="font-normal text-sm tracking-wide text-justify lg:text-lg"
 					>
-						<img src="./public/icons/map.svg" alt="Map Icon" />
+						<div class="flex items-center mt-5">
+							<div
+								class="size-[3.75rem] lg:size-[5.625rem] p-4 lg:p-6 flex items-center justify-center rounded-full bg-[var(--blue)] text-white"
+							>
+								<img
+									src="./public/icons/map.svg"
+									alt="Map Icon"
+									class="size-full"
+								/>
+							</div>
+							<p class="ml-4 w-full flex-1">
+								Aenean massa. Cum sociis natoque penatibus et magnis dis
+								parturient montes, nascetur ridiculus mus. Donec quam felis,
+								ultricies nec, pellentesque eu, pretium quis, sem.
+							</p>
+						</div>
+						<div class="flex items-center mt-5">
+							<div
+								class="size-[3.75rem] lg:size-[5.625rem] p-4 lg:p-6 flex items-center justify-center rounded-full bg-[var(--blue)] text-white"
+							>
+								<img
+									src="./public/icons/map.svg"
+									alt="Map Icon"
+									class="size-full"
+								/>
+							</div>
+							<p class="ml-4 w-full flex-1">
+								Aenean massa. Cum sociis natoque penatibus et magnis dis
+								parturient montes, nascetur ridiculus mus. Donec quam felis,
+								ultricies nec, pellentesque eu, pretium quis, sem.
+							</p>
+						</div>
+						<div class="flex items-center mt-5">
+							<div
+								class="size-[3.75rem] lg:size-[5.625rem] p-4 lg:p-6 flex items-center justify-center rounded-full bg-[var(--blue)] text-white"
+							>
+								<img
+									src="./public/icons/map.svg"
+									alt="Map Icon"
+									class="size-full"
+								/>
+							</div>
+							<p class="ml-4 w-full flex-1">
+								Aenean massa. Cum sociis natoque penatibus et magnis dis
+								parturient montes, nascetur ridiculus mus. Donec quam felis,
+								ultricies nec, pellentesque eu, pretium quis, sem.
+							</p>
+						</div>
 					</div>
-					<p
-						class="ml-4 font-normal text-sm tracking-[5%] w-full flex-1 text-justify"
-					>
-						Aenean massa. Cum sociis natoque penatibus et magnis dis parturient
-						montes, nascetur ridiculus mus. Donec quam felis, ultricies nec,
-						pellentesque eu, pretium quis, sem.
-					</p>
-				</div>
-				<div class="flex items-center mt-5">
-					<div
-						class="w-[3.75rem] h-[3.75rem] flex items-center justify-center rounded-full bg-[var(--blue)] text-white"
-					>
-						<img src="./public/icons/map.svg" alt="Map Icon" />
-					</div>
-					<p
-						class="ml-4 font-normal text-sm tracking-[5%] w-full flex-1 text-justify"
-					>
-						Aenean massa. Cum sociis natoque penatibus et magnis dis parturient
-						montes, nascetur ridiculus mus. Donec quam felis, ultricies nec,
-						pellentesque eu, pretium quis, sem.
-					</p>
-				</div>
-				<div class="flex items-center mt-5">
-					<div
-						class="w-[3.75rem] h-[3.75rem] flex items-center justify-center rounded-full bg-[var(--blue)] text-white"
-					>
-						<img src="./public/icons/map.svg" alt="Map Icon" />
-					</div>
-					<p
-						class="ml-4 font-normal text-sm tracking-[5%] w-full flex-1 text-justify"
-					>
-						Aenean massa. Cum sociis natoque penatibus et magnis dis parturient
-						montes, nascetur ridiculus mus. Donec quam felis, ultricies nec,
-						pellentesque eu, pretium quis, sem.
-					</p>
 				</div>
 			</div>
 		</section>
 
 		<!-- Caneca - Lorem Ipsum -->
-		<section class="mt-14">
+		<section class="mt-14 lg:mt-24 max-w-[80rem] mx-auto lg:flex lg:px-4">
 			<img
 				src="./public/images/Caneca.png"
 				alt="Caneca-Avanti"
-				class="w-screen h-[100vw] object-cover"
+				class="w-screen h-[100vw] object-cover lg:w-[55%] lg:h-auto"
 			/>
 
-			<div class="px-6 pt-10">
-				<h2 class="font-[Nunito] font-bold text-2xl uppercase tracking-[4%]">
-					Lorem Ipsum
-				</h2>
-				<p
-					class="font-[Nunito] font-normal text-base tracking-[5%] text-justify mt-4"
+			<div
+				class="px-6 pt-10 font-[Nunito] font-normal text-base tracking-widest text-justify grid"
+			>
+				<div class="my-auto">
+					<h2
+						class="font-[Nunito] font-bold text-2xl uppercase tracking-wider lg:text-3xl leading-snug"
+					>
+						Lorem Ipsum
+					</h2>
+					<!-- Mobile text (Estava diferente no modelo, apenas segui) -->
+					<div class="lg:hidden">
+						<p class="mt-4">
+							Aenean massa. Cum sociis natoque penatibus et magnis dis
+							parturient montes, nascetur ridiculus mus. Donec quam felis,
+							ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat
+							massa quis enim.
+						</p>
+						<p class="mt-4">
+							Cras dignissim est et pellentesque tincidunt. Praesent bibendum
+							quis velit a aliquam. Ut vestibulum turpis eget mi iaculis
+							ullamcorper. Curabitur nec metus sed tortor sollicitudin porta nec
+							eu enim. Ut fermentum scelerisque tortor mollis volutpat. Mauris
+							iaculis magna nisl, vel porttitor augue placerat et.
+						</p>
+					</div>
+					<div class="hidden lg:block">
+						<p class="mt-4">
+							Duis consectetur metus nec lacus auctor dignissim. Mauris vitae
+							finibus dui. Mauris laoreet lacus ut eleifend viverra. Cras
+							efficitur volutpat dui, in lobortis metus lacinia sit amet. Sed
+							lacinia pharetra magna, vel pulvinar ligula hendrerit a. Maecenas
+							fringilla porttitor tortor eget lacinia. Donec sollicitudin
+							euismod orci, auctor fringilla magna consequat interdum. Fusce
+							sagittis elit a libero commodo egestas efficitur id augue.
+						</p>
+						<div class="mt-4">
+							Duis consectetur metus nec lacus auctor dignissim. Mauris vitae
+							finibus dui. Mauris laoreet lacus ut eleifend viverra. Cras
+							efficitur volutpat dui, in lobortis metus lacinia sit amet. Sed
+							lacinia pharetra magna, vel pulvinar ligula hendrerit a. Maecenas
+							fringilla porttitor tortor eget lacinia. Donec sollicitudin
+							euismod orci, auctor fringilla magna consequat interdum. Fusce
+							sagittis elit a libero commodo egestas efficitur id augue.
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Seção 2 Lançamentos apenas desktop -->
+		<section class="mt-14 lg:mt-24 px-4 max-w-[80rem] mx-auto hidden lg:block">
+			<div class="flex justify-between">
+				<h2 class="font-bold text-base leading-none">Lançamentos</h2>
+				<a href="/" class="text-sm font-bold underline leading-none"
+					>Ver mais</a
 				>
-					Aenean massa. Cum sociis natoque penatibus et magnis dis parturient
-					montes, nascetur ridiculus mus. Donec quam felis, ultricies nec,
-					pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.
-				</p>
-				<p
-					class="font-[Nunito] font-normal text-base tracking-[5%] text-justify mt-4"
-				>
-					Cras dignissim est et pellentesque tincidunt. Praesent bibendum quis
-					velit a aliquam. Ut vestibulum turpis eget mi iaculis ullamcorper.
-					Curabitur nec metus sed tortor sollicitudin porta nec eu enim. Ut
-					fermentum scelerisque tortor mollis volutpat. Mauris iaculis magna
-					nisl, vel porttitor augue placerat et.
-				</p>
+			</div>
+			<div class="mt-6 sliderContainer">
+				<div class="slider gap-3">
+					<div class="productContainer">
+						<div class="image">
+							<div class="new">Novo</div>
+							<img src="public/images/product.png" alt="Camisa Branca" />
+						</div>
+						<div class="text">
+							<h3>Lorem ipsum dolor sit amet consectetuer adipiscing elit</h3>
+
+							<div class="pricesContainer">
+								<div class="prices">
+									<div class="original">R$ 100,00</div>
+									<div class="now">R$79,90</div>
+								</div>
+								<div class="discount">10% OFF</div>
+							</div>
+							<div class="bottom">Ou em até <span>10x de R$ 7,90</span></div>
+						</div>
+						<button>
+							<span class="minus">&#x2212;</span>
+							<div class="text">Comprar</div>
+							<span class="more">&#xFF0B;</span>
+						</button>
+					</div>
+					<div class="productContainer">
+						<div class="image">
+							<div class="new">Novo</div>
+							<img src="public/images/product.png" alt="Camisa Branca" />
+						</div>
+						<div class="text">
+							<h3>Lorem ipsum dolor sit amet consectetuer adipiscing elit</h3>
+							<div class="pricesContainer">
+								<div class="prices">
+									<div class="original">R$ 100,00</div>
+									<div class="now">R$79,90</div>
+								</div>
+								<div class="discount">10% OFF</div>
+							</div>
+							<div class="bottom">Ou em até <span>10x de R$ 7,90</span></div>
+						</div>
+						<button>
+							<span class="minus">&#x2212;</span>
+							<div class="text">Comprar</div>
+							<span class="more">&#xFF0B;</span>
+						</button>
+					</div>
+					<div class="productContainer">
+						<div class="image">
+							<div class="new">Novo</div>
+							<img src="public/images/product.png" alt="Camisa Branca" />
+						</div>
+						<div class="text">
+							<h3>Lorem ipsum dolor sit amet consectetuer adipiscing elit</h3>
+							<div class="pricesContainer">
+								<div class="prices">
+									<div class="original">R$ 100,00</div>
+									<div class="now">R$79,90</div>
+								</div>
+								<div class="discount">10% OFF</div>
+							</div>
+							<div class="bottom">Ou em até <span>10x de R$ 7,90</span></div>
+						</div>
+						<button>
+							<span class="minus">&#x2212;</span>
+							<div class="text">Comprar</div>
+							<span class="more">&#xFF0B;</span>
+						</button>
+					</div>
+					<div class="productContainer">
+						<div class="image">
+							<div class="new">Novo</div>
+							<img src="public/images/product.png" alt="Camisa Branca" />
+						</div>
+						<div class="text">
+							<h3>Lorem ipsum dolor sit amet consectetuer adipiscing elit</h3>
+							<div class="pricesContainer">
+								<div class="prices">
+									<div class="original">R$ 100,00</div>
+									<div class="now">R$79,90</div>
+								</div>
+								<div class="discount">10% OFF</div>
+							</div>
+							<div class="bottom">Ou em até <span>10x de R$ 7,90</span></div>
+						</div>
+						<button>
+							<span class="minus">&#x2212;</span>
+							<div class="text">Comprar</div>
+							<span class="more">&#xFF0B;</span>
+						</button>
+					</div>
+					<div class="productContainer">
+						<div class="image">
+							<div class="new">Novo</div>
+							<img src="public/images/product.png" alt="Camisa Branca" />
+						</div>
+						<div class="text">
+							<h3>Lorem ipsum dolor sit amet consectetuer adipiscing elit</h3>
+							<div class="pricesContainer">
+								<div class="prices">
+									<div class="original">R$ 100,00</div>
+									<div class="now">R$79,90</div>
+								</div>
+								<div class="discount">10% OFF</div>
+							</div>
+							<div class="bottom">Ou em até <span>10x de R$ 7,90</span></div>
+						</div>
+						<button>
+							<span class="minus">&#x2212;</span>
+							<div class="text">Comprar</div>
+							<span class="more">&#xFF0B;</span>
+						</button>
+					</div>
+					<div class="productContainer">
+						<div class="image">
+							<div class="new">Novo</div>
+							<img src="public/images/product.png" alt="Camisa Branca" />
+						</div>
+						<div class="text">
+							<h3>Lorem ipsum dolor sit amet consectetuer adipiscing elit</h3>
+							<div class="pricesContainer">
+								<div class="prices">
+									<div class="original">R$ 100,00</div>
+									<div class="now">R$79,90</div>
+								</div>
+								<div class="discount">10% OFF</div>
+							</div>
+							<div class="bottom">Ou em até <span>10x de R$ 7,90</span></div>
+						</div>
+						<button>
+							<span class="minus">&#x2212;</span>
+							<div class="text">Comprar</div>
+							<span class="more">&#xFF0B;</span>
+						</button>
+					</div>
+					<div class="productContainer">
+						<div class="image">
+							<div class="new">Novo</div>
+							<img src="public/images/product.png" alt="Camisa Branca" />
+						</div>
+						<div class="text">
+							<h3>Lorem ipsum dolor sit amet consectetuer adipiscing elit</h3>
+							<div class="pricesContainer">
+								<div class="prices">
+									<div class="original">R$ 100,00</div>
+									<div class="now">R$79,90</div>
+								</div>
+								<div class="discount">10% OFF</div>
+							</div>
+							<div class="bottom">Ou em até <span>10x de R$ 7,90</span></div>
+						</div>
+						<button>
+							<span class="minus">&#x2212;</span>
+							<div class="text">Comprar</div>
+							<span class="more">&#xFF0B;</span>
+						</button>
+					</div>
+					<div class="productContainer">
+						<div class="image">
+							<div class="new">Novo</div>
+							<img src="public/images/product.png" alt="Camisa Branca" />
+						</div>
+						<div class="text">
+							<h3>Lorem ipsum dolor sit amet consectetuer adipiscing elit</h3>
+							<div class="pricesContainer">
+								<div class="prices">
+									<div class="original">R$ 100,00</div>
+									<div class="now">R$79,90</div>
+								</div>
+								<div class="discount">10% OFF</div>
+							</div>
+							<div class="bottom">Ou em até <span>10x de R$ 7,90</span></div>
+						</div>
+						<button>
+							<span class="minus">&#x2212;</span>
+							<div class="text">Comprar</div>
+							<span class="more">&#xFF0B;</span>
+						</button>
+					</div>
+					<div class="productContainer">
+						<div class="image">
+							<div class="new">Novo</div>
+							<img src="public/images/product.png" alt="Camisa Branca" />
+						</div>
+						<div class="text">
+							<h3>Lorem ipsum dolor sit amet consectetuer adipiscing elit</h3>
+							<div class="pricesContainer">
+								<div class="prices">
+									<div class="original">R$ 100,00</div>
+									<div class="now">R$79,90</div>
+								</div>
+								<div class="discount">10% OFF</div>
+							</div>
+							<div class="bottom">Ou em até <span>10x de R$ 7,90</span></div>
+						</div>
+						<button>
+							<span class="minus">&#x2212;</span>
+							<div class="text">Comprar</div>
+							<span class="more">&#xFF0B;</span>
+						</button>
+					</div>
+					<div class="productContainer">
+						<div class="image">
+							<div class="new">Novo</div>
+							<img src="public/images/product.png" alt="Camisa Branca" />
+						</div>
+						<div class="text">
+							<h3>Lorem ipsum dolor sit amet consectetuer adipiscing elit</h3>
+							<div class="pricesContainer">
+								<div class="prices">
+									<div class="original">R$ 100,00</div>
+									<div class="now">R$79,90</div>
+								</div>
+								<div class="discount">10% OFF</div>
+							</div>
+							<div class="bottom">Ou em até <span>10x de R$ 7,90</span></div>
+						</div>
+						<button>
+							<span class="minus">&#x2212;</span>
+							<div class="text">Comprar</div>
+							<span class="more">&#xFF0B;</span>
+						</button>
+					</div>
+				</div>
+				<div class="sliderDots -bottom-4"></div>
 			</div>
 		</section>
 
 		<!-- Office / Contato -->
-		<section class="relative mt-14">
+		<section class="relative mt-14 lg:mt-24 lg:h-[41.25rem]">
 			<img
 				src="./public/images/Office Avanti.png"
 				alt="Office Avanti"
-				class="object-cover min-h-[28rem] w-full blur-[2px]"
+				class="object-cover min-h-[28rem] w-full blur-[2px] h-full"
 			/>
 			<h3
-				class="absolute font-[Nunito] bg-[var(--blue)] text-white font-semibold text-base text-center align-middle py-[1.125rem] px-6 transform -translate-y-1/2 top-1/2"
+				class="absolute w-full font-[Nunito] bg-[var(--blue)] text-white font-semibold lg:font-normal lg:text-3xl text-base text-center align-middle py-[1.125rem] lg:py-12 px-6 transform -translate-y-1/2 top-1/2"
 			>
 				Entre em contato conosco e verifique a disponibilidade para sua região!
 			</h3>
 		</section>
 
 		<!-- News Letter -->
-		<section class="mt-14 py-1 px-6">
-			<h4 class="text-base font-bold text-center">
+		<section class="mt-14 lg:mt-24 py-1 px-6">
+			<h4 class="text-base font-bold text-center lg:text-xl">
 				Cadastre-se na nossa <span class="text-[var(--blue)]">newsletter</span>
 			</h4>
 
 			<form action="/index.html" method="get">
 				<div
-					class="bg-[var(--backgroundGray)] py-8 px-4 mt-4 rounded-lg gap-4 flex flex-col"
+					class="bg-[var(--backgroundGray)] lg:bg-[#dedede] py-8 lg:py-16 px-4 lg:px-14 xl:px-28 mt-4 rounded-lg gap-4 flex flex-col lg:flex-row lg:w-fit mx-auto"
 				>
 					<input
 						type="text"
 						placeholder="Digite seu nome"
-						class="bg-white rounded-lg py-4 px-6 text-sm w-full outline-transparent focus:outline-[var(--blue)]"
+						class="bg-white rounded-lg py-4 px-6 text-sm w-full lg:w-auto xl:w-[17.5rem] lg:max-w-72 outline-transparent focus:outline-[var(--blue)]"
 					/>
 					<input
 						type="text"
 						placeholder="Digite seu e-mail"
-						class="bg-white rounded-lg py-4 px-6 text-sm w-full outline-transparent focus:outline-[var(--blue)]"
+						class="bg-white rounded-lg py-4 px-6 text-sm w-full lg:w-auto xl:w-[17.5rem] lg:max-w-72 outline-transparent focus:outline-[var(--blue)]"
 					/>
 					<div class="flex items-center justify-center">
 						<input
@@ -743,7 +1232,7 @@
 						/>
 						<label
 							for="privacyPolicy"
-							class="font-bold text-xs text-[#656565] ml-1"
+							class="font-bold text-xs text-[#656565] ml-1 whitespace-nowrap"
 						>
 							Estou de acordo com a
 							<a href="#" class="underline">Política de Privacidade</a>
@@ -751,7 +1240,7 @@
 					</div>
 					<button
 						type="submit"
-						class="font-bold text-base text-center w-full bg-[var(--blue)] py-4 rounded-lg text-white"
+						class="font-bold text-base text-center w-full lg:w-auto bg-[var(--blue)] py-3.5 px-6 rounded-lg text-white"
 					>
 						Cadastrar
 					</button>
@@ -760,115 +1249,129 @@
 		</section>
 
 		<!-- Avanti Ending -->
-		<section class="mt-14 bg-[var(--backgroundGray)] py-10">
-			<!-- Avanti -->
-			<h4 class="flex justify-center">
-				<img src="./public/images/logo.svg" alt="Avanti" />
-			</h4>
+		<section class="mt-14 lg:mt-24 bg-[var(--backgroundGray)] py-10">
+			<div class="lg:flex max-w-[72.5rem] mx-auto lg:px-8">
+				<!-- Redes sociais e logo -->
+				<div>
+					<!-- Avanti -->
+					<h4 class="flex justify-center lg:justify-start lg:pt-4">
+						<img src="./public/images/logo.svg" alt="Avanti" />
+					</h4>
 
-			<!-- Redes Sociais -->
-			<div class="flex my-10 justify-center gap-10">
-				<a href="https://www.instagram.com/penseavanti/" target="_blank">
-					<img
-						src="./public/icons/socialNetworks/instagram.svg"
-						alt="Instagram"
-					/>
-				</a>
-				<a
-					href="https://www.facebook.com/penseavanti/photos/?locale=pt_BR&_rdr"
-					target="_blank"
+					<!-- Redes Sociais -->
+					<div class="flex my-10 justify-center gap-10 lg:*:size-6">
+						<a href="https://www.instagram.com/penseavanti/" target="_blank">
+							<img
+								src="./public/icons/socialNetworks/instagram.svg"
+								alt="Instagram"
+							/>
+						</a>
+						<a
+							href="https://www.facebook.com/penseavanti/photos/?locale=pt_BR&_rdr"
+							target="_blank"
+						>
+							<img
+								src="./public/icons/socialNetworks/facebook.svg"
+								alt="Facebook"
+							/>
+						</a>
+						<a href="https://www.youtube.com/@penseavanti" target="_blank">
+							<img
+								src="./public/icons/socialNetworks/youtube.svg"
+								alt="YouTube"
+							/>
+						</a>
+						<a href="https://www.tiktok.com/@avantilojas" target="_blank">
+							<img
+								src="./public/icons/socialNetworks/tiktok.svg"
+								alt="TikTok"
+							/>
+						</a>
+					</div>
+				</div>
+				<!-- Drop downs -->
+				<div
+					class="border-b border-[var(--lightGray)] lg:border-0 lg:flex lg:w-full justify-between lg:pl-32"
 				>
-					<img
-						src="./public/icons/socialNetworks/facebook.svg"
-						alt="Facebook"
-					/>
-				</a>
-				<a href="https://www.youtube.com/@penseavanti" target="_blank">
-					<img src="./public/icons/socialNetworks/youtube.svg" alt="YouTube" />
-				</a>
-				<a href="https://www.tiktok.com/@avantilojas" target="_blank">
-					<img src="./public/icons/socialNetworks/tiktok.svg" alt="TikTok" />
-				</a>
-			</div>
-
-			<!-- Drop downs -->
-			<div class="border-b border-[var(--lightGray)]">
-				<div>
-					<label for="institucional">
-						<h5
-							class="px-5 py-4 font-bold text-base border-t border-[var(--lightGray)] relative flex justify-between items-center"
+					<div>
+						<label for="institucional">
+							<h5
+								class="px-5 py-4 font-bold text-base border-t lg:border-0 border-[var(--lightGray)] relative flex justify-between items-center"
+							>
+								Institucional
+								<span
+									class="w-2 h-2 border-r-2 border-b-2 transform rotate-45 -translate-y-1/4 border-[var(--blue)] peer-checked:-rotate-45 lg:hidden"
+								></span>
+							</h5>
+						</label>
+						<input type="checkbox" id="institucional" class="peer hidden" />
+						<div
+							class="max-h-0 lg:max-h-full h-auto peer-checked:max-h-96 overflow-hidden transition-all mb-0 text-[#656565] font-bold text-xs px-5"
 						>
-							Institucional
-							<span
-								class="w-2 h-2 border-r-2 border-b-2 transform rotate-45 -translate-y-1/4 border-[var(--blue)] peer-checked:-rotate-45"
-							></span>
-						</h5>
-					</label>
-					<input type="checkbox" id="institucional" class="peer hidden" />
-					<div
-						class="max-h-0 h-auto peer-checked:max-h-96 overflow-hidden transition-all mb-0 text-[#656565] font-bold text-xs px-5"
-					>
-						<ul class="*:mb-2 last:mb-4">
-							<li><a href="#">Sobre Nós</a></li>
-							<li><a href="#">Nossas Lojas</a></li>
-							<li><a href="#">Privacidade e Segurança</a></li>
-							<li><a href="#">Termos e Condições</a></li>
-						</ul>
+							<ul class="*:mb-2 last:mb-4">
+								<li><a href="#">Sobre Nós</a></li>
+								<li><a href="#">Nossas Lojas</a></li>
+								<li><a href="#">Privacidade e Segurança</a></li>
+								<li><a href="#">Termos e Condições</a></li>
+							</ul>
+						</div>
 					</div>
-				</div>
-				<div>
-					<label for="ajuda">
-						<h5
-							class="px-5 py-4 font-bold text-base border-t border-[var(--lightGray)] relative flex justify-between items-center"
+					<div>
+						<label for="ajuda">
+							<h5
+								class="px-5 py-4 font-bold text-base border-t lg:border-0 border-[var(--lightGray)] relative flex justify-between items-center"
+							>
+								Central de ajuda
+								<span
+									class="w-2 h-2 border-r-2 border-b-2 transform rotate-45 -translate-y-1/4 border-[var(--blue)] lg:hidden"
+								></span>
+							</h5>
+						</label>
+						<input type="checkbox" id="ajuda" class="peer hidden" />
+						<div
+							class="max-h-0 lg:max-h-full h-auto peer-checked:max-h-96 overflow-hidden transition-all mb-0 text-[#656565] font-bold text-xs px-5"
 						>
-							Central de ajuda
-							<span
-								class="w-2 h-2 border-r-2 border-b-2 transform rotate-45 -translate-y-1/4 border-[var(--blue)]"
-							></span>
-						</h5>
-					</label>
-					<input type="checkbox" id="ajuda" class="peer hidden" />
-					<div
-						class="max-h-0 h-auto peer-checked:max-h-96 overflow-hidden transition-all mb-0 text-[#656565] font-bold text-xs px-5"
-					>
-						<ul class="*:mb-2 last:mb-4">
-							<li><a href="#">Fale Conosco</a></li>
-							<li><a href="#">Frete e Entrega</a></li>
-							<li><a href="#">Trocas e Devoluções</a></li>
-							<li><a href="#">Formas de Pagamento</a></li>
-							<li><a href="#">FAQ</a></li>
-						</ul>
+							<ul class="*:mb-2 last:mb-4">
+								<li><a href="#">Fale Conosco</a></li>
+								<li><a href="#">Frete e Entrega</a></li>
+								<li><a href="#">Trocas e Devoluções</a></li>
+								<li><a href="#">Formas de Pagamento</a></li>
+								<li><a href="#">FAQ</a></li>
+							</ul>
+						</div>
 					</div>
-				</div>
-				<div>
-					<label for="atendimento">
-						<h5
-							class="px-5 py-4 font-bold text-base border-t border-[var(--lightGray)] relative flex justify-between items-center"
+					<div>
+						<label for="atendimento">
+							<h5
+								class="px-5 py-4 font-bold text-base border-t lg:border-0 border-[var(--lightGray)] relative flex justify-between items-center"
+							>
+								Atendimento
+								<span
+									class="w-2 h-2 border-r-2 border-b-2 transform rotate-45 -translate-y-1/4 border-[var(--blue)] lg:hidden"
+								></span>
+							</h5>
+						</label>
+						<input type="checkbox" id="atendimento" class="peer hidden" />
+						<div
+							class="max-h-0 lg:max-h-full h-auto peer-checked:max-h-96 overflow-hidden transition-all mb-0 text-[#656565] font-bold text-xs px-5"
 						>
-							Atendimento
-							<span
-								class="w-2 h-2 border-r-2 border-b-2 transform rotate-45 -translate-y-1/4 border-[var(--blue)]"
-							></span>
-						</h5>
-					</label>
-					<input type="checkbox" id="atendimento" class="peer hidden" />
-					<div
-						class="max-h-0 h-auto peer-checked:max-h-96 overflow-hidden transition-all mb-0 text-[#656565] font-bold text-xs px-5"
-					>
-						<ul class="*:mb-2 last:mb-4">
-							<li>Telefone: <span class="font-normal">(00) 1234-5678</span></li>
-							<li>
-								E-mail: <span class="font-normal">exemplo@exemplo.com.br</span>
-							</li>
-							<li>Horário de atendimento:</li>
-							<li class="font-normal">Segunda a Sábado: 07h00 às 23h00</li>
-							<li class="font-normal">Domingos e Feriados: 07h00 às 21h00</li>
-						</ul>
+							<ul class="*:mb-2 last:mb-4">
+								<li>
+									Telefone: <span class="font-normal">(00) 1234-5678</span>
+								</li>
+								<li>
+									E-mail:
+									<span class="font-normal">exemplo@exemplo.com.br</span>
+								</li>
+								<li>Horário de atendimento:</li>
+								<li class="font-normal">Segunda a Sábado: 07h00 às 23h00</li>
+								<li class="font-normal">Domingos e Feriados: 07h00 às 21h00</li>
+							</ul>
+						</div>
 					</div>
 				</div>
 			</div>
-
-			<!-- Redes Sociais -->
+			<!-- Metodos de pagamento -->
 			<div class="mt-10 flex flex-wrap px-12 gap-8 justify-center">
 				<img src="./public/icons/cards/amex.svg" alt="American Express" />
 				<img src="./public/icons/cards/mastercard.svg" alt="Mastercard" />
@@ -887,12 +1390,30 @@
 
 		<!-- Footer -->
 		<footer class="px-4 pb-4 mt-10">
-			<p class="text-center text-[#303030] font-normal text-xs leading-5">
-				Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
-				nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
-				volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci.
-			</p>
-			<div class="mt-10 flex w-full h-8 px-4 justify-around items-center">
+			<div
+				class="text-center text-[#303030] font-normal text-xs leading-5 max-w-[67rem] mx-auto"
+			>
+				<!-- Texto mobile -->
+				<p class="lg:hidden">
+					Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+					nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
+					volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci.
+				</p>
+				<!-- Texto desktop -->
+				<p class="hidden lg:block">
+					Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+					nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
+					volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation
+					ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+					Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse
+					molestie consequat, vel illum dolore eu feugiat nulla facilisis at
+					vero eros et accumsan et iusto odio dignissim qui blandit praesent
+					luptatum zzril delenit augue duis dolore te feugait nulla facilisi.
+				</p>
+			</div>
+			<div
+				class="mt-10 flex w-full h-8 px-4 justify-around items-center lg:max-w-80 lg:mx-auto lg:mb-8"
+			>
 				<img
 					src="./public/icons/footer/encrypt.svg"
 					alt="Let's Encrypt"

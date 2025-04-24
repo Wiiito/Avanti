@@ -6,41 +6,50 @@
 Array.from(document.getElementsByClassName('sliderContainer')).forEach(
 	(element, sliderCount) => {
 		// Pegando estados do slider
-		const sliderContainerWidth = element.getBoundingClientRect().width
+		let sliderContainerWidth = element.getBoundingClientRect().width
 		const fullSlider = element.getElementsByClassName('slider')[0]
 		const dotsElement = element.getElementsByClassName('sliderDots')[0]
 
 		let dots = []
 
-		if (dotsElement) {
-			const dotsCount = Math.ceil(fullSlider.scrollWidth / sliderContainerWidth)
+		const makeDots = () => {
+			sliderContainerWidth = element.getBoundingClientRect().width
+			if (dotsElement) {
+				dotsElement.innerHTML = ''
 
-			// Colocando pontos na div de pontos
-			for (let i = 0; i < dotsCount; i++) {
-				let inputPeer = document.createElement('input')
-				inputPeer.type = 'radio'
-				inputPeer.name = 'slider' + sliderCount
-				inputPeer.id = 'slider' + sliderCount + '-' + i
-				if (i == 0) inputPeer.checked = true
+				const dotsCount = Math.round(
+					fullSlider.scrollWidth / sliderContainerWidth
+				)
 
-				dots.push(inputPeer)
+				// Colocando pontos na div de pontos
+				for (let i = 0; i < dotsCount; i++) {
+					let inputPeer = document.createElement('input')
+					inputPeer.type = 'radio'
+					inputPeer.name = 'slider' + sliderCount
+					inputPeer.id = 'slider' + sliderCount + '-' + i
+					if (i == 0) inputPeer.checked = true
 
-				let labelPeer = document.createElement('label')
-				labelPeer.htmlFor = inputPeer.id
+					dots.push(inputPeer)
 
-				let dotDiv = document.createElement('div')
-				dotDiv.appendChild(inputPeer)
-				dotDiv.appendChild(labelPeer)
+					let labelPeer = document.createElement('label')
+					labelPeer.htmlFor = inputPeer.id
 
-				dotsElement.appendChild(dotDiv)
+					let dotDiv = document.createElement('div')
+					dotDiv.appendChild(inputPeer)
+					dotDiv.appendChild(labelPeer)
+
+					dotsElement.appendChild(dotDiv)
+				}
+
+				fullSlider.addEventListener('scroll', () => {
+					dots[
+						Math.floor(fullSlider.scrollLeft / sliderContainerWidth)
+					].checked = true
+				})
 			}
-
-			fullSlider.addEventListener('scroll', () => {
-				dots[
-					Math.floor(fullSlider.scrollLeft / sliderContainerWidth)
-				].checked = true
-			})
 		}
+		window.addEventListener('resize', makeDots)
+		makeDots()
 
 		// AutoScroll
 		if (fullSlider.classList.contains('autoScroll')) {
