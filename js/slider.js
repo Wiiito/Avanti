@@ -1,3 +1,59 @@
 // Classe sliderContainer identifica o slider automaticamente
 // Slider define o conteudo
 // Classe sliderDots é onde vão os pontos
+// autoScroll scrolla o slider sozinho de tempos em tempos
+
+Array.from(document.getElementsByClassName('sliderContainer')).forEach(
+	(element, sliderCount) => {
+		// Pegando estados do slider
+		const sliderContainerWidth = element.getBoundingClientRect().width
+		const fullSlider = element.getElementsByClassName('slider')[0]
+		const dotsElement = element.getElementsByClassName('sliderDots')[0]
+
+		let dots = []
+
+		if (dotsElement) {
+			const dotsCount = Math.ceil(fullSlider.scrollWidth / sliderContainerWidth)
+
+			// Colocando pontos na div de pontos
+			for (let i = 0; i < dotsCount; i++) {
+				let inputPeer = document.createElement('input')
+				inputPeer.type = 'radio'
+				inputPeer.name = 'slider' + sliderCount
+				inputPeer.id = 'slider' + sliderCount + '-' + i
+				if (i == 0) inputPeer.checked = true
+
+				dots.push(inputPeer)
+
+				let labelPeer = document.createElement('label')
+				labelPeer.htmlFor = inputPeer.id
+
+				let dotDiv = document.createElement('div')
+				dotDiv.appendChild(inputPeer)
+				dotDiv.appendChild(labelPeer)
+
+				dotsElement.appendChild(dotDiv)
+			}
+
+			fullSlider.addEventListener('scroll', () => {
+				dots[
+					Math.floor(fullSlider.scrollLeft / sliderContainerWidth)
+				].checked = true
+			})
+		}
+
+		// AutoScroll
+		if (fullSlider.classList.contains('autoScroll')) {
+			setInterval(() => {
+				if (
+					fullSlider.scrollLeft + sliderContainerWidth >=
+					fullSlider.scrollWidth
+				) {
+					fullSlider.scrollLeft = 0
+				} else {
+					fullSlider.scrollLeft = fullSlider.scrollLeft + sliderContainerWidth
+				}
+			}, 5000)
+		}
+	}
+)

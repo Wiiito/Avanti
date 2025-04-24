@@ -102,5 +102,24 @@
 		padding: 0.625rem 0;
 		color: white;
 		background-color: var(--blue);
+		border: transparent 1px solid;
+		display: flex;
+		justify-content: space-around;
+
+		span {
+			display: none;
+		}
+	}
+
+	.buying {
+		background-color: white;
+		border: #4abf6a 1px solid;
+		padding: 0.625rem 1rem;
+		color: black;
+		font-weight: 700;
+
+		span {
+			display: block;
+		}
 	}
 }

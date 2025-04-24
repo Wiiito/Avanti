@@ -94,4 +94,20 @@
   padding: 0.625rem 0;
   color: white;
   background-color: var(--blue);
+  border: transparent 1px solid;
+  display: flex;
+  justify-content: space-around;
+}
+.productContainer button span {
+  display: none;
+}
+.productContainer .buying {
+  background-color: white;
+  border: #4abf6a 1px solid;
+  padding: 0.625rem 1rem;
+  color: black;
+  font-weight: 700;
+}
+.productContainer .buying span {
+  display: block;
 }/*# sourceMappingURL=product.css.map */
