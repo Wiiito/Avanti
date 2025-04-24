@@ -30,6 +30,11 @@
 		<title>AVANTI</title>
 	</head>
 	<body class="bg-white">
+		<!-- Resultados busca -->
+		<div class="fixed bg-white h-96 z-[60]" id="searchResults">
+			<div class="searchItem"></div>
+		</div>
+
 		<!-- Header -->
 		<div
 			class="fixed w-full bg-white z-50 shadow-[0px_3px_3px_0px_rgba(0,0,0,0.05)]"
@@ -64,7 +69,7 @@
 						</div>
 					</a>
 
-					<form class="relative hidden lg:block w-full max-w-[38rem]">
+					<form class="relative hidden lg:block w-full max-w-[38rem] searchBox">
 						<input
 							type="text"
 							class="border border-[var(--lightGray)] rounded-[0.625rem] text-sm py-2.5 pl-4 w-full placeholder:font-semibold placeholder:text-black outline-1 outline-transparent focus:outline-black font-semibold"
@@ -94,7 +99,7 @@
 					</div>
 				</div>
 
-				<form class="relative mt-6 lg:hidden">
+				<form class="relative mt-6 lg:hidden searchBox">
 					<input
 						type="text"
 						class="border border-[var(--lightGray)] rounded-[0.625rem] text-sm py-2.5 pl-4 w-full placeholder:font-semibold placeholder:text-black outline-1 outline-transparent focus:outline-black font-semibold"
@@ -441,7 +446,7 @@
 							class="absolute h-full left-0 mix-blend-darken hidden lg:block"
 						/>
 						<div
-							class="absolute w-[8.75rem] lg:w-auto h-[10.25rem] lg:h-auto ml-[50%] lg:ml-[30%] lg:pr-8 lg:right-0 transform -translate-y-1/2 top-1/2 text-center font-[Nunito,sans-serif]"
+							class="absolute w-[8.75rem] lg:w-auto lg:max-w-[50%] xl:max-w-full h-[10.25rem] lg:h-auto ml-[50%] lg:ml-[30%] lg:pr-8 lg:right-0 transform -translate-y-1/2 top-1/2 text-center font-[Nunito,sans-serif]"
 						>
 							<p
 								class="text-[2.5rem] lg:text-[6.5rem] font-light leading-10 lg:leading-none uppercase"
@@ -474,7 +479,7 @@
 							class="absolute h-full left-0 mix-blend-darken hidden lg:block"
 						/>
 						<div
-							class="absolute w-[8.75rem] lg:w-auto h-[10.25rem] lg:h-auto ml-[50%] lg:ml-[30%] lg:pr-8 lg:right-0 transform -translate-y-1/2 top-1/2 text-center font-[Nunito,sans-serif]"
+							class="absolute w-[8.75rem] lg:w-auto lg:max-w-[50%] xl:max-w-full h-[10.25rem] lg:h-auto ml-[50%] lg:ml-[30%] lg:pr-8 lg:right-0 transform -translate-y-1/2 top-1/2 text-center font-[Nunito,sans-serif]"
 						>
 							<p
 								class="text-[2.5rem] lg:text-[6.5rem] font-light leading-10 lg:leading-none uppercase"
@@ -507,7 +512,7 @@
 							class="absolute h-full left-0 mix-blend-darken hidden lg:block"
 						/>
 						<div
-							class="absolute w-[8.75rem] lg:w-auto h-[10.25rem] lg:h-auto ml-[50%] lg:ml-[30%] lg:pr-8 lg:right-0 transform -translate-y-1/2 top-1/2 text-center font-[Nunito,sans-serif]"
+							class="absolute w-[8.75rem] lg:w-auto lg:max-w-[50%] xl:max-w-full h-[10.25rem] lg:h-auto ml-[50%] lg:ml-[30%] lg:pr-8 lg:right-0 transform -translate-y-1/2 top-1/2 text-center font-[Nunito,sans-serif]"
 						>
 							<p
 								class="text-[2.5rem] lg:text-[6.5rem] font-light leading-10 lg:leading-none uppercase"
@@ -1434,6 +1439,7 @@
 	<script src="./js/slider.js"></script>
 	<script src="./js/products.js"></script>
 	<script src="./js/menu.js"></script>
+	<script src="./js/search.js"></script>
 
 	<!-- Header Margin -->
 	<script>

@@ -1,3 +1,5 @@
+// Responsavel por alterar número dos items
+
 Array.from(document.getElementsByClassName('productContainer')).forEach(
 	(element) => {
 		let count = 0

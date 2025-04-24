@@ -1,3 +1,5 @@
+// Responsavel por todas as interações dos menus, tanto mobile quanto desktop
+
 const menuHamburguer = document.getElementById('menuHamburguer')
 const mobileMenuHamburguer = document.getElementById('mobileMenuHamburguer')
 
