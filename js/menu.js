@@ -6,6 +6,8 @@ const mobileMenuHamburguer = document.getElementById('mobileMenuHamburguer')
 const menu = document.getElementById('menu')
 const menuDepartamento = document.getElementById('todosDepartamentos')
 
+const menuBar = document.getElementById('menuBar')
+
 const departamentosMenus = Array.from(
 	document.getElementsByClassName('departamento')
 )
@@ -110,6 +112,13 @@ mobileMenuHamburguer.addEventListener('click', () => {
 menu.addEventListener('mouseleave', () => {
 	reset()
 	hidden = true
+})
+
+menuBar.addEventListener('mouseleave', (e) => {
+	if (e.clientY < menuBar.getBoundingClientRect().y) {
+		reset()
+		hidden = true
+	}
 })
 
 departamentosMenus.forEach((element, elementNumber) => {
