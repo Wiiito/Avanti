@@ -27,6 +27,13 @@
   justify-content: center;
   align-items: center;
   cursor: pointer;
+  transition: all ease-in-out 150ms;
+}
+.sliderContainer .buttons button:hover {
+  background-color: var(--blue);
+}
+.sliderContainer .buttons button:hover svg path {
+  fill: #fff;
 }
 .sliderContainer .buttons .right {
   transform: translateX(-50%) scaleX(-1);

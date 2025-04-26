@@ -27,6 +27,17 @@
 			justify-content: center;
 			align-items: center;
 			cursor: pointer;
+			transition: all ease-in-out 150ms;
+
+			&:hover {
+				background-color: var(--blue);
+
+				svg {
+					path {
+						fill: #fff;
+					}
+				}
+			}
 		}
 
 		.right {

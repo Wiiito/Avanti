@@ -88,6 +88,11 @@
 				color: white;
 				padding: 0.25rem 0.5rem;
 				background-color: var(--greenBlue);
+				cursor: pointer;
+
+				@media (min-width: 1024px) {
+					text-decoration: underline;
+				}
 			}
 		}
 		.bottom {
@@ -119,6 +124,11 @@
 		display: flex;
 		justify-content: space-around;
 		cursor: pointer;
+		transition: all ease 150ms;
+
+		&:hover {
+			background-color: #004cd2;
+		}
 
 		span {
 			display: none;

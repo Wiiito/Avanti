@@ -85,6 +85,12 @@
   color: white;
   padding: 0.25rem 0.5rem;
   background-color: var(--greenBlue);
+  cursor: pointer;
+}
+@media (min-width: 1024px) {
+  .productContainer .text .pricesContainer .discount {
+    text-decoration: underline;
+  }
 }
 .productContainer .text .bottom {
   font-family: Nunito Sans;
@@ -113,6 +119,10 @@
   display: flex;
   justify-content: space-around;
   cursor: pointer;
+  transition: all ease 150ms;
+}
+.productContainer button:hover {
+  background-color: #004cd2;
 }
 .productContainer button span {
   display: none;
