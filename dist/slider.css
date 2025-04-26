@@ -2,6 +2,36 @@
   position: relative;
   width: 100%;
 }
+.sliderContainer .buttons {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  transform: translateY(-50%);
+  top: 50%;
+  display: none;
+}
+@media (min-width: 1024px) {
+  .sliderContainer .buttons {
+    display: flex;
+  }
+}
+.sliderContainer .buttons button {
+  transform: translateX(-50%);
+  height: 2rem;
+  width: 2rem;
+  background-color: white;
+  border: 1px solid var(--blue);
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.sliderContainer .buttons .right {
+  transform: translateX(-50%) scaleX(-1);
+  transform-origin: right;
+}
 
 .slider {
   display: flex;
@@ -35,6 +65,7 @@
   border-radius: 100%;
   background-color: var(--darkGray);
   display: block;
+  cursor: pointer;
 }
 .sliderDots label:is(:where(input):checked ~ *) {
   background-color: var(--color-black);

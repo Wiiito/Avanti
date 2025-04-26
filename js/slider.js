@@ -10,6 +10,26 @@ Array.from(document.getElementsByClassName('sliderContainer')).forEach(
 		const fullSlider = element.getElementsByClassName('slider')[0]
 		const dotsElement = element.getElementsByClassName('sliderDots')[0]
 
+		const buttonsContainer = element.querySelector('.buttons')
+		if (buttonsContainer) {
+			const buttons = Array.from(buttonsContainer.querySelectorAll('button'))
+			buttons.forEach((button) => {
+				button.addEventListener('click', (event) => {
+					let currentButton = event.target
+
+					while (currentButton.nodeName != 'BUTTON') {
+						currentButton = currentButton.parentElement
+					}
+
+					if (currentButton.classList.contains('right')) {
+						fullSlider.scrollLeft += sliderContainerWidth
+					} else {
+						fullSlider.scrollLeft -= sliderContainerWidth
+					}
+				})
+			})
+		}
+
 		let dots = []
 
 		const makeDots = () => {
@@ -38,12 +58,16 @@ Array.from(document.getElementsByClassName('sliderContainer')).forEach(
 					dotDiv.appendChild(inputPeer)
 					dotDiv.appendChild(labelPeer)
 
+					dotDiv.addEventListener('click', () => {
+						fullSlider.scrollLeft = i * sliderContainerWidth
+					})
+
 					dotsElement.appendChild(dotDiv)
 				}
 
 				fullSlider.addEventListener('scroll', () => {
 					dots[
-						Math.floor(fullSlider.scrollLeft / sliderContainerWidth)
+						Math.round(fullSlider.scrollLeft / sliderContainerWidth)
 					].checked = true
 				})
 			}
